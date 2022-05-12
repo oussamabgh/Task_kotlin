@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/countries"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/previousbutton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:gravity="left|center_vertical"
+
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="-45dp"
+            style="?android:attr/borderlessButtonStyle"
+
+
+
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/card_recycler_view_countries"
+            android:layout_width="400dp"
+            android:layout_height="647dp"
+            android:layout_marginTop="20dp"
+            tools:itemCount="7"
+            tools:listitem="@layout/item_country" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

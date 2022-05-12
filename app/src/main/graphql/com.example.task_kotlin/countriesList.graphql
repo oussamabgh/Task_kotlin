@@ -1,0 +1,15 @@
+query FindCountriesOfAContinent($code:ID!){
+    continent(code: $code) {
+        countries {
+            code
+            capital
+            name
+            emoji
+            native
+            states {
+                name
+
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Continents App</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="contnt">Continents</string>
+
+    <string name="countries">Countries</string>
+
+    <string name="no_data_available">No States for this country</string>
+</resources>
